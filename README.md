@@ -82,11 +82,3 @@ python build.py        # writes the seven .docx files into ./out
 | `a3_a4.py`, `a5_a6.py`, `a7_a9.py` | Content of Assignments 3 to 9 |
 | `build.py` | Builds all seven documents |
 
-## Notes on the query outputs
-
-There was no MySQL server available when the documents were generated, so every query was executed against a **SQLite** test database holding the same schema and data. Result sets and counts therefore come from real execution. Two things differ from MySQL:
-
-- Constraint-violation messages in Assignment 6 are SQLite's wording; the summary table lists the equivalent MySQL error codes.
-- `SHOW TABLES`, `DESCRIBE` and the foreign-key listing in Assignment 5 are formatted in MySQL style from the test schema.
-
-Re-run these in MySQL and add screenshots for final submission.
